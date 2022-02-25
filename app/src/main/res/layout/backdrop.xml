@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sortPopular"
+        android:text="@string/menu_sort_popular" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sortTopRated"
+        android:text="@string/menu_sort_top_rated" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewFav"
+        android:text="@string/view_my_fav" />
+
+    <View
+        android:layout_width="56dp"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="?android:attr/textColorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Shrine.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signOut"
+        android:text="@string/sign_out" />
+
+</merge>

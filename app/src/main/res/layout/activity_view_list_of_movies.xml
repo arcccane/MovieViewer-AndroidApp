@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:theme="@style/Theme.MaterialComponents"
+    tools:context=".ViewListOfMoviesActivity">
+
+    <LinearLayout
+        style="@style/Widget.Shrine.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="88dp">
+        <include layout="@layout/backdrop" />
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.Shrine.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/menu_icon"
+            app:title="Top Rated Movies" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ViewSwitcher
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/GridBackgroundColor"
+        android:elevation="8dp"
+        >
+
+        <ListView
+            android:id="@+id/movielist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:saveEnabled="true"
+            />
+
+    </ViewSwitcher>
+</FrameLayout>

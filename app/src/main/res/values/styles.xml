@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.Shrine.Backdrop" parent="Theme.MaterialComponents">
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+
+    <style name="Widget.Shrine.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+</resources>
