@@ -14,7 +14,7 @@
     "Default": {
       "PoolId": "ap-southeast-1_VFNPbisgW",
       "AppClientId": "q1gg6i3l374utbsvfv56gis3q",
-      "AppClientSecret": "uavticqgd6ujva4r54sptphe1ni03obfjr7tom4jto84v3t8hsk",
+      "AppClientSecret": "SECRETKEY",
       "Region": "ap-southeast-1"
     }
   },
